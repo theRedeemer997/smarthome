@@ -1,84 +1,16 @@
-<%-include('layout/header')-%>
+<%-include('partials/header')-%>
   <body>
     <section class="banner-navbar">
       <!-- BANNER -->
-      <header class="navbar navbar-expand-lg navbar-dark bg-warning bg-gradient">
-        <div class="container">
-          <span class="fw-bolder text-success">EMERGENCY SERVICE AVAILABLE 24/7</span>
-          <span class="fw-bolder text-success d-none d-md-block">WATERLOO | KITCHENER | CAMBRIDGE | GUELPH - 226-988-6648</span>
-        </div>
-      </header>
+      <%-include('partials/banner')-%>
       <!-- //BANNER -->
-  
       <!--  NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a href="#" class="navbar-brand">Smarthome Renovations And Repairs</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a href="#learn" class="nav-link">What you'll learn</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#questions" class="nav-link">Questions</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#instructors" class="nav-link">Instructors</a>
-                </li>
-              </ul>  
-            </div>
-          </div>
-        </nav>
+      <%-include('partials/navbar')-%>
+      <!-- // NAVBAR -->
     </section>
-    <!-- // NAVBAR -->
 
     <!-- HERO SECTION -->
-    <section class="bg-dark text-light p-5 text-center">
-      <!-- CAROUSEL -->
-       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#myCarousel" data-bs-slide-to="1" class="active"></li>
-            </ol>
-            <div class="carousel-item active">
-               <div class="container">
-                <div class="d-sm-flex align-items-center">
-                  <div class="mb-5">
-                    <h1>Experience excellence with every task we undertake <span class="text-warning">-trust our expertise!</span></h1>
-                    <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tenetur consectetur, recusandae nulla fugit necessitatibus consequatur obcaecati reiciendis enim dolores.</p> -->
-                  </div>
-                  <img class="img-fluid carousel-img" src="/images/home-utility.jpg" alt="" srcset="">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-               <div class="container">
-                <div class="d-sm-flex align-items-center">
-                  <div class="mb-5">
-                    <h1>Rely on us for<span class="text-warning"> top-notch </span> job handling with utmost <span class="text-warning">professionalism</span></h1>
-                    <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tenetur consectetur, recusandae nulla fugit necessitatibus consequatur obcaecati reiciendis enim dolores.</p> -->
-                  </div>
-                  <img class="img-fluid carousel-img" src="/images/renovation-bathroom.jpg" alt="" srcset="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-none d-lg-block">
-          <a href="#myCarousel" class="carousel-control-prev " role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a href="#myCarousel" class="carousel-control-next " role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-      <!-- // CAROUSEL -->
-      
-    </section>
+    <%-include('partials/herosection')-%>
     <!-- // HERO SECTION -->
 
     
