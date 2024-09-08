@@ -5,4 +5,14 @@
     width: 100%;
     z-index: 999;
   }
+
+  .carousel-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-img {
+    width: 100%;
+  }
 }
