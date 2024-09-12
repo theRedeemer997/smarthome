@@ -1,0 +1,109 @@
+<section class="customer-feedback">
+  <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" id="exampleModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark">Rate Us:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="/action/saveFeedback" method="post">
+              <div class="star-rating mb-3">
+                <input
+                  class="star"
+                  type="radio"
+                  id="star-1"
+                  name="rating"
+                  value="1"
+                /><label id="i-star-1" for="star-1" class="fas fa-star"></label>
+                <input
+                  class="star"
+                  type="radio"
+                  id="star-2"
+                  name="rating"
+                  value="2"
+                /><label id="i-star-2" for="star-2" class="fas fa-star"></label>
+                <input
+                  class="star"
+                  type="radio"
+                  id="star-3"
+                  name="rating"
+                  value="3"
+                /><label id="i-star-3" for="star-3" class="fas fa-star"></label>
+                <input
+                  class="star"
+                  type="radio"
+                  id="star-4"
+                  name="rating"
+                  value="4"
+                /><label id="i-star-4" for="star-4" class="fas fa-star"></label>
+                <input
+                  class="star"
+                  type="radio"
+                  id="star-5"
+                  name="rating"
+                  value="5"
+                /><label id="i-star-5" for="star-5" class="fas fa-star"></label>
+              </div>
+
+              <div class="mb-3">
+                <label for="userEmailAddress" class="form-label text-dark"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  name="userEmailAddress"
+                  class="form-control"
+                  id="userEmailAddress"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="userName" class="form-label text-dark">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  name="customerUserName"
+                />
+              </div>
+              <div class="mb-3">
+                <label
+                  for="exampleFormControlTextarea1"
+                  class="form-label text-dark"
+                  >Feedback</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="customerFeedback"
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
