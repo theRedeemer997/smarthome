@@ -15,6 +15,8 @@ const renderPurifierPage = require("./routes/renderPurifierServices");
 //connect the database
 const connectDB = require("./connectMongo");
 const renderPurifierServices = require("./routes/renderPurifierServices");
+const postCustomerFeedback = require("./routes/postCustomerFeedback");
+
 connectDB();
 
 //Middleware
@@ -45,10 +47,13 @@ app.get("/services/refrigeration", renderReferigerationPage);
 app.get("/services/gas", renderGasPage);
 
 //route to render the services - purifier
-app.get("/services/purifier", renderPurifierPage);
+app.get("/services/purifier", renderPurifierServices);
 
 //route to send sms
 // app.post("/callService", sendSMS);
+
+//route to save customer feeback
+app.post("/action/saveFeedback", postCustomerFeedback);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
