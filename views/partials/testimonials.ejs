@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row p-4">
             <div class="col-md-3 p-4 text-start">
-              <% if(noOfCustomer == 5) { %>
+              <% if(feedback[i].Rating == 5) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -34,7 +34,7 @@
                   class="fas fa-star high"
                 ></label>
               </div>
-              <% } %> <% if(noOfCustomer == 4) { %>
+              <% } %> <% if(feedback[i].Rating == 4) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -57,7 +57,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(noOfCustomer == 3) { %>
+              <% } %> <% if(feedback[i].Rating == 3) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -80,7 +80,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(noOfCustomer == 2) { %>
+              <% } %> <% if(feedback[i].Rating == 2) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -103,7 +103,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(noOfCustomer == 1) { %>
+              <% } %> <% if(feedback[i].Rating == 1) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -130,7 +130,7 @@
             </div>
             <div class="col-md-2 py-4">  
               <span class="text-black-50 display-5 fw-bolder">
-                 <%=noOfCustomer%>/5
+                 <%=feedback[i].Rating%>/5
               </span>
             </div>
             <span class="text-start"><%=feedback[i].Feedback%></span>
