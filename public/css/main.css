@@ -1,38 +1,102 @@
+:root {
+  --navbar-green: #007d47;
+  --navbar-yellow: #ffe400;
+  --overlay-text: #112d11;
+  --ultra-white: #fff;
+  --shining-stars: #f39c12;
+  --disabled-stars: #ddd;
+  --test: #ccffcb;
+}
+
+body {
+  background-color: var(--test);
+}
+/* html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  } */
+
+/* hero section styles */
+.position-relative {
+  position: relative !important;
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: var(--overlay-text);
+  font-size: 1.5rem;
+}
+.img-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+/*// hero-section styles */
+/* navbar-component and banner */
+.navbar-component a {
+  color: #fff !important;
+}
+.banner-component {
+  background-color: var(--navbar-yellow);
+}
+.navbar-component {
+  background-color: var(--navbar-green);
+}
+.green-text {
+  color: var(--navbar-green) !important;
+}
+.nav-component {
+  color: var(--navbar-green) !important;
+  background-color: var(--navbar-yellow) !important;
+}
+/* //navbar-component and banner */
 .carousel-img {
   width: 50%;
 }
-
+/* star-rating */
 .star-rating {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
-
 .star-rating input,
 .rating input {
   display: none;
 }
-
 .star-rating label,
 .rating label {
-  color: #ddd;
+  color: var(--disabled-stars);
   font-size: 2em;
   cursor: pointer;
 }
+/* //star-rating */
 
-/* .star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: #f39c12;
-} */
+.carousel-parent {
+  position: relative;
+}
 
+/* highlighted stars */
 .high {
-  color: #f39c12 !important;
+  color: var(--shining-stars) !important;
 }
-
-.error {
-  color: red;
+/* //highlighted stars */
+/* testimonials */
+.flex {
+  display: flex;
+  justify-content: start;
 }
-
+/* //testimonials */
 @media screen and (min-width: 990px) {
   .banner-navbar {
     position: fixed;
@@ -41,9 +105,11 @@
     z-index: 999;
   }
 }
-
 @media screen and (max-width: 768px) {
   .carousel-img {
     width: 100%;
+  }
+  .centered-text {
+    display: none;
   }
 }

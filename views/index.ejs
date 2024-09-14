@@ -1,5 +1,5 @@
     <%-include('partials/header')-%>
-      <body class="bg-dark text-light">
+      <body >
         <section class="banner-navbar">
           
           <!-- BANNER -->
@@ -11,23 +11,27 @@
           <!-- // NAVBAR -->
         </section>
 
-          <!-- HERO SECTION -->
-          <%-include('partials/herosection')-%>
-          <!-- // HERO SECTION -->
+        <!-- HEROSECTION -->
+         <%-include('partials/herosection')-%>
+        <!-- //HEROSECTION -->
   
-          <!-- SERVICES  -->
+        <!-- SERVICES  -->
           <%-include('partials/services')-%>
-          <!-- // SERVICES -->
+        <!-- // SERVICES -->
 
-          <!-- FEEDBACK MODAL -->
+        <!-- TESTIMONIALS -->
+           <%-include('partials/testimonials',{feedback:feedback}) %>
+        <!-- //TESTIMONIALS -->
+
+        <!-- FEEDBACK MODAL -->
           <%-include('partials/feedback-modal')-%>
-          <!-- //FEEDBACK MODAL -->
+        <!-- //FEEDBACK MODAL -->
 
          
 
-          <!-- FOOTER -->
+        <!-- FOOTER -->
           <%-include('partials/footer')-%>
-          <!-- //FOOTER -->
+        <!-- //FOOTER -->
         
         <%-include('partials/common')-%>
         <script defer src="/js/main.js"></script>

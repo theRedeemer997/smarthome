@@ -1,5 +1,5 @@
 const feebackModal = bootstrap.Modal.getOrCreateInstance("#exampleModal");
-console.log("🚀 ~ feebackModal:", feebackModal);
+// console.log("🚀 ~ feebackModal:", feebackModal);
 
 window.addEventListener("DOMContentLoaded", () => {
   if (JSON.parse(sessionStorage.getItem("feedbackModal")) !== "up") {
@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 const stars = document.querySelectorAll(".star");
-console.log("🚀 ~ stars:", stars);
+// console.log("🚀 ~ stars:", stars);
 for (let i = 0; i < stars.length; i++) {
   stars[i].addEventListener("click", highLightStars);
 }

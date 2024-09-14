@@ -31,7 +31,7 @@ app.set("views", __dirname + "/views");
 //set ejs as the default templating engine
 app.set("view engine", "ejs");
 
-//route to render the home page
+//route to render the home page with testimonials if there
 app.get("/", renderHomePage);
 
 //route to render the services - heating
@@ -54,6 +54,7 @@ app.get("/services/purifier", renderPurifierServices);
 
 //route to save customer feeback
 app.post("/action/saveFeedback", postCustomerFeedback);
+
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
