@@ -1,39 +1,41 @@
-    <%-include('partials/header')-%>
-      <body >
-        <section class="banner-navbar">
-          
-          <!-- BANNER -->
-          <%-include('partials/banner')-%>
-          <!-- //BANNER -->
-          
-          <!--  NAVBAR -->
-          <%-include('partials/navbar')-%>
-          <!-- // NAVBAR -->
-        </section>
+        <%-include('partials/header')-%>
+          <body >
+            <section class="banner-navbar">
+              
+              <!-- BANNER -->
+              <%-include('partials/banner')-%>
+              <!-- //BANNER -->
+              
+              <!--  NAVBAR -->
+              <%-include('partials/navbar')-%>
+              <!-- // NAVBAR -->
+            </section>
 
-        <!-- HEROSECTION -->
-         <%-include('partials/herosection')-%>
-        <!-- //HEROSECTION -->
-  
-        <!-- SERVICES  -->
-          <%-include('partials/services')-%>
-        <!-- // SERVICES -->
+            <!-- HEROSECTION -->
+            <%-include('partials/herosection')-%>
+            <!-- //HEROSECTION -->
+      
+            <!-- SERVICES  -->
+              <%-include('partials/services')-%>
+            <!-- // SERVICES -->
 
-        <!-- TESTIMONIALS -->
-           <%-include('partials/testimonials',{feedback:feedback}) %>
-        <!-- //TESTIMONIALS -->
+            <!-- TESTIMONIALS -->
+              <%-include('partials/testimonials',{feedback:feedback}) %>
+            <!-- //TESTIMONIALS -->
 
-        <!-- FEEDBACK MODAL -->
-          <%-include('partials/feedback-modal')-%>
-        <!-- //FEEDBACK MODAL -->
+            <!-- OVERALL FEEDBACK -->
+            <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
+            <!-- // OVERALL FEEDBACK -->
 
-         
+            <!-- FEEDBACK MODAL -->
+              <%-include('partials/feedback-modal')-%>
+            <!-- //FEEDBACK MODAL -->
 
-        <!-- FOOTER -->
-          <%-include('partials/footer')-%>
-        <!-- //FOOTER -->
-        
-        <%-include('partials/common')-%>
-        <script defer src="/js/main.js"></script>
-      </body>
-    </html>
+            <!-- FOOTER -->
+              <%-include('partials/footer')-%>
+            <!-- //FOOTER -->
+            
+            <%-include('partials/common')-%>
+            <script defer src="/js/main.js"></script>
+          </body>
+        </html>

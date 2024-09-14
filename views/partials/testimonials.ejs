@@ -7,11 +7,11 @@
     <div class="carousel-inner">
       <!-- loop start here -->
       <% for(let i=0; i<feedback.length;i++) {  %>
-      <div class="carousel-item <%if(i == 0) { %> active <% } %>" data-bs-interval="<%= (1000*(i+1)) %>">
+      <div class="carousel-item <%if(i == 0) { %> active <% } %>" data-bs-interval="<%= (2000*(i+1)) %>">
         <div class="container">
           <div class="row p-4">
-            <div class="col-md-10 p-4 text-start">
-              <% if(feedback[i].Rating == 5) { %>
+            <div class="col-md-3 p-4 text-start">
+              <% if(noOfCustomer == 5) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -34,7 +34,7 @@
                   class="fas fa-star high"
                 ></label>
               </div>
-              <% } %> <% if(feedback[i].Rating == 4) { %>
+              <% } %> <% if(noOfCustomer == 4) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -57,7 +57,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(feedback[i].Rating == 3) { %>
+              <% } %> <% if(noOfCustomer == 3) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -80,7 +80,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(feedback[i].Rating == 2) { %>
+              <% } %> <% if(noOfCustomer == 2) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -103,7 +103,7 @@
                   class="fas fa-star"
                 ></label>
               </div>
-              <% } %> <% if(feedback[i].Rating == 1) { %>
+              <% } %> <% if(noOfCustomer == 1) { %>
               <div class="rating">
                 <input type="radio" name="rating" value="5" /><label
                   for="star5"
@@ -127,6 +127,11 @@
                 ></label>
               </div>
               <% } %>
+            </div>
+            <div class="col-md-2 py-4">  
+              <span class="text-black-50 display-5 fw-bolder">
+                 <%=noOfCustomer%>/5
+              </span>
             </div>
             <span class="text-start"><%=feedback[i].Feedback%></span>
             <br />

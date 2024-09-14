@@ -11,12 +11,6 @@
 body {
   background-color: var(--test);
 }
-/* html,
-  body {
-    width: auto !important;
-    overflow-x: hidden !important;
-  } */
-
 /* hero section styles */
 .position-relative {
   position: relative !important;
@@ -40,7 +34,7 @@ body {
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 /*// hero-section styles */
 /* navbar-component and banner */

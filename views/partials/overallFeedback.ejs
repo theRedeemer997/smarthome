@@ -1,0 +1,135 @@
+<section class="overall-feedback">
+  <div class="row py-3">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="row px-2 border border-success border-2 rounded">
+          <div class="col-md-4 text-center text-md-start py-4 fw-bolder">
+            Overall Customer Ratings
+          </div>
+          <div class="col-md-4 text-center text-md-start py-4 fw-bolder">
+            <% if(avgfeedback == 5) { %>
+            <div class="rating">
+              <input type="radio" name="rating" value="5" /><label
+                for="star5"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="4" /><label
+                for="star4"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="3" /><label
+                for="star3"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="2" /><label
+                for="star2"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="1" /><label
+                for="star1"
+                class="fas fa-star high"
+              ></label>
+            </div>
+            <% } %> <% if(avgfeedback == 4) { %>
+            <div class="rating">
+              <input type="radio" name="rating" value="5" /><label
+                for="star5"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="4" /><label
+                for="star4"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="3" /><label
+                for="star3"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="2" /><label
+                for="star2"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="1" /><label
+                for="star1"
+                class="fas fa-star"
+              ></label>
+            </div>
+            <% } %> <% if(avgfeedback == 3) { %>
+            <div class="rating">
+              <input type="radio" name="rating" value="5" /><label
+                for="star5"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="4" /><label
+                for="star4"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="3" /><label
+                for="star3"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="2" /><label
+                for="star2"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="1" /><label
+                for="star1"
+                class="fas fa-star"
+              ></label>
+            </div>
+            <% } %> <% if(avgfeedback == 2) { %>
+            <div class="rating">
+              <input type="radio" name="rating" value="5" /><label
+                for="star5"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="4" /><label
+                for="star4"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="3" /><label
+                for="star3"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="2" /><label
+                for="star2"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="1" /><label
+                for="star1"
+                class="fas fa-star"
+              ></label>
+            </div>
+            <% } %> <% if(avgfeedback == 1) { %>
+            <div class="rating">
+              <input type="radio" name="rating" value="5" /><label
+                for="star5"
+                class="fas fa-star high"
+              ></label>
+              <input type="radio" name="rating" value="4" /><label
+                for="star4"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="3" /><label
+                for="star3"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="2" /><label
+                for="star2"
+                class="fas fa-star"
+              ></label>
+              <input type="radio" name="rating" value="1" /><label
+                for="star1"
+                class="fas fa-star"
+              ></label>
+            </div>
+            <% } %>
+            <span><%=avgfeedback%>/5</span>
+          </div>
+          <div class="col-md-4 text-center text-md-start py-4 fw-bolder">
+            <%=noOfCustomer%> Customer Reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
