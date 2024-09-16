@@ -1,52 +1,57 @@
         <%-include('partials/header')-%>
           <body >
-            <section class="banner-navbar">
+            <%if(sw==="404") { %>
+              <%-include('partials/404')-%>
+            <%}%>
+            <%if(sw==="!404") { %>
+              <section class="banner-navbar">
+                
+                <!-- BANNER -->
+                <%-include('partials/banner')-%>
+                <!-- //BANNER -->
+                
+                <!--  NAVBAR -->
+                <%-include('partials/navbar')-%>
+                <!-- // NAVBAR -->
+              </section>      
+
+              <!-- HEROSECTION -->
+              <%-include('partials/herosection')-%>
+              <!-- //HEROSECTION -->
               
-              <!-- BANNER -->
-              <%-include('partials/banner')-%>
-              <!-- //BANNER -->
+              <!-- SERVICES  -->
+                <%-include('partials/services')-%>
+              <!-- // SERVICES -->
               
-              <!--  NAVBAR -->
-              <%-include('partials/navbar')-%>
-              <!-- // NAVBAR -->
-            </section>
-
-            <!-- HEROSECTION -->
-            <%-include('partials/herosection')-%>
-            <!-- //HEROSECTION -->
-      
-            <!-- SERVICES  -->
-              <%-include('partials/services')-%>
-            <!-- // SERVICES -->
-
-            <!-- MISSION -->
-             <%-include('partials/mission')-%>
-            <!-- //MISSION -->
-
-            <%if(noOfCustomer>0) { %>
-              <!-- TESTIMONIALS -->
-                <%-include('partials/testimonials',{feedback:feedback}) %>
-              <!-- //TESTIMONIALS -->
+              <!-- MISSION -->
+               <%-include('partials/mission')-%>
+              <!-- //MISSION -->
               
-            <% } %>
-            <!-- WHY CHOOSE US -->
-                <%-include('partials/whychooseus') %>
-            <!-- // WHY CHOOSE US -->
-            <%if(noOfCustomer>0) { %>
-              <!-- OVERALL FEEDBACK -->
-              <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
-              <!-- // OVERALL FEEDBACK -->
-            <% } %>
-
-            <!-- FEEDBACK MODAL -->
-              <%-include('partials/feedback-modal')-%>
-            <!-- //FEEDBACK MODAL -->
-
-            <!-- FOOTER -->
-              <%-include('partials/footer')-%>
-            <!-- //FOOTER -->
-            
-            <%-include('partials/common')-%>
-            <script defer src="/js/main.js"></script>
+              <%if(noOfCustomer>0) { %>
+                <!-- TESTIMONIALS -->
+                  <%-include('partials/testimonials',{feedback:feedback}) %>
+                <!-- //TESTIMONIALS -->
+                
+              <% } %>
+              <!-- WHY CHOOSE US -->
+                  <%-include('partials/whychooseus') %>
+              <!-- // WHY CHOOSE US -->
+              <%if(noOfCustomer>0) { %>
+                <!-- OVERALL FEEDBACK -->
+                <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
+                <!-- // OVERALL FEEDBACK -->
+              <% } %>
+              
+              <!-- FEEDBACK MODAL -->
+                <%-include('partials/feedback-modal')-%>
+              <!-- //FEEDBACK MODAL -->
+              
+              <!-- FOOTER -->
+                <%-include('partials/footer')-%>
+              <!-- //FOOTER -->
+              
+              <%-include('partials/common')-%>
+              <script defer src="/js/main.js"></script>
+          <%}%>
           </body>
         </html>

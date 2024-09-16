@@ -3,10 +3,11 @@ const feebackModal = bootstrap.Modal.getOrCreateInstance("#exampleModal");
 
 window.addEventListener("DOMContentLoaded", () => {
   if (JSON.parse(sessionStorage.getItem("feedbackModal")) !== "up") {
+    sessionStorage.setItem("feedbackModal", JSON.stringify("up"));
     feebackModal.show();
-    if (feebackModal._isShown) {
-      sessionStorage.setItem("feedbackModal", JSON.stringify("up"));
-    }
+    // if (feebackModal._isShown) {
+    //   sessionStorage.setItem("feedbackModal", JSON.stringify("up"));
+    // }
   }
 });
 
