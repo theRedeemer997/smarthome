@@ -42,7 +42,7 @@ body {
   color: #fff !important;
 }
 .banner-component {
-  background-color: var(--navbar-yellow);
+  background-color: var(--navbar-yellow) !important;
 }
 .navbar-component {
   background-color: var(--navbar-green);
