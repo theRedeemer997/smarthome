@@ -19,13 +19,24 @@
               <%-include('partials/services')-%>
             <!-- // SERVICES -->
 
-            <!-- TESTIMONIALS -->
-              <%-include('partials/testimonials',{feedback:feedback}) %>
-            <!-- //TESTIMONIALS -->
+            <!-- MISSION -->
+             <%-include('partials/mission')-%>
+            <!-- //MISSION -->
 
-            <!-- OVERALL FEEDBACK -->
-            <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
-            <!-- // OVERALL FEEDBACK -->
+            <%if(noOfCustomer>0) { %>
+              <!-- TESTIMONIALS -->
+                <%-include('partials/testimonials',{feedback:feedback}) %>
+              <!-- //TESTIMONIALS -->
+              
+            <% } %>
+            <!-- WHY CHOOSE US -->
+                <%-include('partials/whychooseus') %>
+            <!-- // WHY CHOOSE US -->
+            <%if(noOfCustomer>0) { %>
+              <!-- OVERALL FEEDBACK -->
+              <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
+              <!-- // OVERALL FEEDBACK -->
+            <% } %>
 
             <!-- FEEDBACK MODAL -->
               <%-include('partials/feedback-modal')-%>
