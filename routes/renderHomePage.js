@@ -11,9 +11,6 @@ const renderHomePage = async (req, res) => {
   );
 
   let noOfCustomer = feedback.length;
-  console.log("🚀 ~ renderHomePage ~ noOfCustomer:", noOfCustomer);
-  console.log("🚀 ~ renderHomePage ~ avgOfAllFeedbacks:", avgOfAllFeedbacks);
-  console.log("🚀 ~ renderHomePage ~ sumOfAllFeedbacks:", sumOfAllFeedbacks);
 
   // console.log(feedback[0].Name);
   res.render("index", { feedback, avgOfAllFeedbacks, noOfCustomer });

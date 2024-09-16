@@ -9,8 +9,22 @@ const postCustomerFeedback = async (req, res) => {
     Name: customerUserName,
     Feedback: customerFeedback,
   });
-  await feeback.save();
-  res.redirect("/");
+  if (
+    rating !== 0 &&
+    userEmailAddress.length !== 0 &&
+    customerUserName.length !== 0 &&
+    customerFeedback.length !== 0
+  ) {
+    console.log(
+      "🚀 ~ postCustomerFeedback ~ :",
+      "saving to customer feedback collection"
+    );
+    await feeback.save();
+    res.redirect("/");
+  } else {
+    res.redirect("/");
+    console.log("🚀 ~ postCustomerFeedback ~ :", "missing fields");
+  }
 };
 
 module.exports = postCustomerFeedback;
