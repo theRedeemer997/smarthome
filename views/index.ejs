@@ -1,57 +1,60 @@
         <%-include('partials/header')-%>
           <body >
             <%if(sw==="404") { %>
-              <%-include('partials/404')-%>
+              <main>
+                <%-include('partials/404')-%>
+              </main>
             <%}%>
             <%if(sw==="!404") { %>
-              <section class="banner-navbar">
+              <main class="not404">
+                <section class="banner-navbar">
+                  <!-- BANNER -->
+                  <%-include('partials/banner')-%>
+                  <!-- //BANNER -->
+                  
+                  <!--  NAVBAR -->
+                  <%-include('partials/navbar')-%>
+                  <!-- // NAVBAR -->
+                </section>
                 
-                <!-- BANNER -->
-                <%-include('partials/banner')-%>
-                <!-- //BANNER -->
+                <!-- HEROSECTION -->
+                 <%-include('partials/herosection')-%>
+                <!-- //HEROSECTION -->
                 
-                <!--  NAVBAR -->
-                <%-include('partials/navbar')-%>
-                <!-- // NAVBAR -->
-              </section>      
-
-              <!-- HEROSECTION -->
-              <%-include('partials/herosection')-%>
-              <!-- //HEROSECTION -->
-              
-              <!-- SERVICES  -->
-                <%-include('partials/services')-%>
-              <!-- // SERVICES -->
-              
-              <!-- MISSION -->
-               <%-include('partials/mission')-%>
-              <!-- //MISSION -->
-              
-              <%if(noOfCustomer>0) { %>
-                <!-- TESTIMONIALS -->
-                  <%-include('partials/testimonials',{feedback:feedback}) %>
-                <!-- //TESTIMONIALS -->
+                <!-- SERVICES  -->
+                  <%-include('partials/services')-%>
+                <!-- // SERVICES -->
                 
-              <% } %>
-              <!-- WHY CHOOSE US -->
-                  <%-include('partials/whychooseus') %>
-              <!-- // WHY CHOOSE US -->
-              <%if(noOfCustomer>0) { %>
-                <!-- OVERALL FEEDBACK -->
-                <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
-                <!-- // OVERALL FEEDBACK -->
-              <% } %>
-              
-              <!-- FEEDBACK MODAL -->
-                <%-include('partials/feedback-modal')-%>
-              <!-- //FEEDBACK MODAL -->
-              
-              <!-- FOOTER -->
-                <%-include('partials/footer')-%>
-              <!-- //FOOTER -->
-              
-              <%-include('partials/common')-%>
-              <script defer src="/js/main.js"></script>
-          <%}%>
+                <!-- MISSION -->
+                 <%-include('partials/mission')-%>
+                <!-- //MISSION -->
+                
+                <%if(noOfCustomer>0) { %>
+                  <!-- TESTIMONIALS -->
+                    <%-include('partials/testimonials',{feedback:feedback}) %>
+                  <!-- //TESTIMONIALS -->
+                  
+                <% } %>
+                <!-- WHY CHOOSE US -->
+                    <%-include('partials/whychooseus') %>
+                <!-- // WHY CHOOSE US -->
+                <%if(noOfCustomer>0) { %>
+                  <!-- OVERALL FEEDBACK -->
+                  <%-include('partials/overallFeedback',{avgfeedback:avgOfAllFeedbacks, noOfCustomer:noOfCustomer})%>
+                  <!-- // OVERALL FEEDBACK -->
+                <% } %>
+                
+                <!-- FEEDBACK MODAL -->
+                  <%-include('partials/feedback-modal')-%>
+                <!-- //FEEDBACK MODAL -->
+                
+                <!-- FOOTER -->
+                  <%-include('partials/footer')-%>
+                <!-- //FOOTER -->
+                
+                <%-include('partials/common')-%>
+                <script defer src="/js/main.js"></script>
+              </main>
+            <%}%>
           </body>
         </html>

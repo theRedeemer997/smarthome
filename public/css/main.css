@@ -8,7 +8,7 @@
   --test: #ccffcb;
 }
 
-body {
+.not404 {
   background-color: var(--test);
 }
 /* hero section styles */
