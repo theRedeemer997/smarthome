@@ -1,22 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --navbar-green: #033f47;
-  --navbar-yellow: #ffe400;
-  --overlay-text: #112d11;
-  --ultra-white: #fff;
-  --shining-stars: #f39c12;
+  --shining-stars: #ffe400;
   --disabled-stars: #ddd;
   --main-bg: #55423d;
-  --color-heading: #eef3db;
+  --main-text-color: #fff3ec;
+  --btn-color:#ffc0ad;
+  --btn-text-color:#271c19;
+  --panel-bg:#140d0b;
+  --heading-colors:#fffffe;
+  --modal-panel:#ffc0ad;
 }
-
-main {
+body {
   font-family: Bai Jamjuree, sans-serif;
   background-color: var(--main-bg);
-  color: var(--color-heading);
+  color: var(--main-text-color);
+  overflow-x: hidden;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  color: var(--heading-colors);
+}
+.explore-works {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+}
+.services {
+  background-color: var(--panel-bg) !important;
+}
+.card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-container > img {
+  width: 200px !important;
+  height: 200px !important;
+}
+.card-img-container > .icon {
+  font-size: 60px;
+  color: #e78fb3;
+}
 .position-relative {
   position: relative !important;
 }
@@ -39,6 +62,15 @@ main {
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.service-card {
+  background-color:var(--main-bg) ;
+  padding: 10px;
+}
+.service-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .font-wt-500 {
   font-weight: 500 !important;
@@ -86,22 +118,24 @@ main {
   cursor: pointer;
 }
 /* //star-rating */
-
 .carousel-parent {
   position: relative;
 }
-
 /* highlighted stars */
 .high {
   color: var(--shining-stars) !important;
 }
 /* //highlighted stars */
-/* main-bgimonials */
+/* testimonials */
+.testimonials {
+  background-color: var(--modal-panel);
+  color: #140d0b;
+}
+/* // testimonials */
 .flex {
   display: flex;
   justify-content: start;
 }
-/* //main-bgimonials */
 @media screen and (min-width: 990px) {
   .banner-navbar {
     position: fixed;
@@ -116,5 +150,12 @@ main {
   }
   .centered-text {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
   }
 }
