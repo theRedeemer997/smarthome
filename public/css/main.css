@@ -27,6 +27,13 @@ h1,h2,h3,h4,h5,h6 {
 .services {
   background-color: var(--panel-bg) !important;
 }
+.mission,.vision {
+  background-color: var(--panel-bg) !important;
+}
+.mission-flex-col {
+  display: flex ;
+  align-items: center ;
+}
 .card-img-container {
   display: flex;
   justify-content: center;

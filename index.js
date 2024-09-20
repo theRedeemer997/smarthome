@@ -9,7 +9,6 @@ const renderHeatingPage = require("./routes/renderHeatingServices");
 const renderCoolingPage = require("./routes/renderCoolingServices");
 const renderReferigerationPage = require("./routes/renderRefrigerationServices");
 const renderGasPage = require("./routes/renderGasServices");
-const renderPurifierPage = require("./routes/renderPurifierServices");
 // const sendSMS = require("./routes/sendSMS");
 
 //connect the database
