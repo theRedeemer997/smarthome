@@ -28,54 +28,11 @@
                 <!-- SERVICES  -->
                   <%-include('partials/services')-%>
                 <!-- // SERVICES -->
-                
-                <section class="mission-vision">
-                  <div class="container">
-                    <div class="row g-5">
-                      <div class="d-none col-12 col-xxl-5 p-5 d-xxl-flex flex-column justify-content-center">
-                          <section class="mission-image">
-                            <div class="container">
-                              <img class="img-fluid" src="https://placehold.co/500x550" alt="">
-                            </div>
-                          </section>
-                      </div>
-                      <div class="col-12 col-xxl-6 p-4">
-                        <section class="mission">
-                          <div class="container py-4">
-                            <div class="row mb-3">
-                              <div class="col-12" data-aos="fade-up">
-                                <h3 class="display-5 text-center mt-4 font-wt-500">
-                                  OUR <span class="text-warning">MISSION</span>
-                                </h3>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-12" data-aos="fade-up" data-aos-delay="50">
-                                  <span>Bringing Smiles, Saving Bucks: At SmartHome Renovation And Services, our mission is all about making you comfy without breaking the bank! We're here to redefine HVAC solutions, ensuring your place is cozy and your savings stay happy. With a sprinkle of innovation and a dash of excellence, we're on a mission to keep your comfort high and your bills low!"</span>
-                              </div>
-                            </div>
-                        </section>
-                        <section class="vision">
-                          <div class="container py-4">
-                            <div class="row mb-3">
-                              <div class="col-12" data-aos="fade-up">
-                                <h4 class="text-center mt-4 font-wt-300 font-sz-30">
-                                  CUSTOMER<span class="text-warning"> SERVICE </span> COVERAGE
-                                </h4>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-12" data-aos="fade-up" data-aos-delay="50">
-                                  <span>Bringing Smiles, Saving Bucks: At SmartHome Renovation And Services, our mission is all about making you comfy without breaking the bank! We're here to redefine HVAC solutions, ensuring your place is cozy and your savings stay happy. With a sprinkle of innovation and a dash of excellence, we're on a mission to keep your comfort high and your bills low!"</span>
-                              </div>
-                            </div>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                
-                
+
+                <!-- MISSION -->
+                  <%-include('partials/mission')-%>
+                <!-- //MISSION -->
+                  
                 <%if(noOfCustomer>0) { %>
                   <!-- TESTIMONIALS -->
                     <%-include('partials/testimonials',{feedback:feedback}) %>
